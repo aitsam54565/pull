@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Origami Website</title>
+    <link rel="stylesheet" href="./bootstrap-5.0.2-dist/css/bootstrap.min.css">
+    <script src="./bootstrap-5.0.2-dist/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="./feedback.css">
+    <link rel="shortcut icon" href="./favicon-removebg-preview (1).png" type="image/x-icon">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+        <script src="./jquery.js"></script>
+</head>
+<body>
+     <nav class="navbar navbar-expand-lg navbar-">
+    <div class="container-fluid">
+      <img src="./Logo.png" alt="" width="130px" height="60px">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="http://127.0.0.1:3000/Index.html" target="_blank">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="http://127.0.0.1:3000/About%20Page/about%20us.html" target="_blank">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="http://127.0.0.1:3000/Triks%20Page/tricks.html" target="_blank">Tricks</a>
+          </li>
+          <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Gallery
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <li><a class="dropdown-item" href="http://127.0.0.1:3000/Gellery/Gallery.html" target="_blank" onclick="showSection('basic')">Basic Creations</a>
+                            </li>
+                            <li><a class="dropdown-item" href="http://127.0.0.1:3000/Gellery/Elaborate.html" target="_blank" onclick="showSection('elaborate')">Elaborate
+                                    Creations</a></li>
+                        </ul>
+                    </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              More
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="http://127.0.0.1:3000/contact/contact.html" target="_blank">Contact</a></li>
+              <li><a class="dropdown-item" href="http://127.0.0.1:3000/feedback/feedback.html" target="_blank">Feed back</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true"></a>
+          </li>
+        </ul>
+        <form class="d-flex">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="search_btn" type="submit">Search</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+<div class="feed_back">
+    <label for="">
+            Name
+            <input type="text" name="" id="name" placeholder="Enter your name">
+        </label>
+        <label for="">
+            Contact No 
+            <input type="tel" name="" id="contact" placeholder="Enter your contact number">
+        </label>
+        <div class="radio_container">
+        <i class="fa-regular fa-star" id="str1"></i>
+        <i class="fa-regular fa-star" id="str2"></i>
+        <i class="fa-regular fa-star" id="str3"></i>
+        <i class="fa-regular fa-star" id="str4"></i>
+        <i class="fa-regular fa-star" id="str5"></i>
+</div>
+        <input type="button" value="Rate Us" onclick="test()">
+
+</div>
+  
+  <footer class="footer mt-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4 footer-section">
+          <h5>About Origami</h5>
+          <p>Discover the art of paper folding with our tutorials, patterns, and creative ideas. Join our
+            community of origami enthusiasts!</p>
+        </div>
+        <div class="col-md-4 footer-section">
+          <h5>Quick Links</h5>
+          <ul class="list-unstyled">
+            <li><a href="http://127.0.0.1:3000/Index.html" target="_blank">Home</a></li>
+            <li><a href="http://127.0.0.1:3000/About%20Page/about%20us.html" target="_blank">About Us</a></li>
+            <li><a href="http://127.0.0.1:3000/Triks%20Page/tricks.html" target="_blank">Tricks</a></li>
+            <li><a href="http://127.0.0.1:3000/Gellery/Gallery.html" target="_blank">Gallery</a></li>
+            <li><a href="http://127.0.0.1:3000/contact/contact.html" target="_blank">Contact</a></li>
+            <li><a href="http://127.0.0.1:3000/feedback/feedback.html" target="_blank">Feedback</a></li>
+          </ul>
+        </div>
+        <div class="col-md-4 footer-section">
+          <h5>Connect With Us</h5>
+          <div class="social-icons">
+            <a href="https://www.WhatsApp.com" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+            <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://www.instagram.com/orig.amimarketing/?utm_source=qr&igsh=MTk5YjU5N2Q0bW1tYw%3D%3D#"
+              aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+            <a href="#" aria-label="GitHub"><i class="fab fa-github"></i></a>
+            <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+            <a href="#" aria-label="Google"><i class="fab fa-google"></i></a>
+            <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+          </div>
+          <p class="mt-3">Subscribe to our newsletter</p>
+          <div class="input-group newsletter">
+            <input type="email" class="form-control" placeholder="Your email">
+            <button class=" btn-subscribe" type="button">Subscribe</button>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom text-center py-3">
+        <p>&copy; 2025 Origami Website. All rights reserved.</p>
+      </div>
+    </div>
+    </div>
+  </footer>
+<script>
+        function test(){
+            let name=document.getElementById("name").value;
+            let contact=document.getElementById("contact").value;
+           alert("Thanks for the supportive rating.")
+        }
+        
+    </script>
+    <script>
+      $(document).ready(function(){
+        $("#str1").click(function(){
+                $(".fa-star").css("color" , "orange");
+                $("#str1").css("color" , "yellow")
+            })
+        })
+        $(document).ready(function(){
+            $("#str2").click(function(){
+                $(".fa-star").css("color" , "orange");
+                $("#str1 , #str2").css("color" , "yellow")
+            })
+        })
+        $(document).ready(function(){
+            $("#str3").click(function(){
+                $(".fa-star").css("color" , "orange");
+                $("#str1 ,#str2 ,#str3").css("color" , "yellow")
+            })
+        })
+        $(document).ready(function(){
+            $("#str4").click(function(){
+                $(".fa-star").css("color" , "orange");
+                $("#str1 ,#str2 ,#str3 ,#str4").css("color" , "yellow")
+            })
+        })
+        $(document).ready(function(){
+            $("#str5").click(function(){
+                $(".fa-star").css("color" , "orange");
+                $("#str1 ,#str2 ,#str3 ,#str4 ,#str5").css("color" , "yellow")
+            })
+      })
+    </script>
+</body>
+</html>

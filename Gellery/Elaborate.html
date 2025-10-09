@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elaborate Creations - Origami Gallery</title>
+    <link rel="shortcut icon" href="./favicon-removebg-preview (1).png" type="image/x-icon">
+    <link rel="stylesheet" href="./bootstrap-5.0.2-dist/css/bootstrap.min.css">
+    <script src="./bootstrap-5.0.2-dist/js/bootstrap.min.js"></script>
+    <script src="./elaborate.js"></script>
+    <link rel="stylesheet" href="./Elaborate.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-">
+        <img src="./Logo.png" width="130px" height="60px" alt="">
+        <div class="container-fluid">
+            <a class="navbar-brand " href="http://127.0.0.1:3000/Index.html" target="_blank">Home</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page"
+                            href="http://127.0.0.1:3000/About%20Page/about%20us.html" target="_blank">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="http://127.0.0.1:3000/Triks%20Page/tricks.html"
+                            target="_blank">Tricks</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Gallery
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <li><a class="dropdown-item" href="http://127.0.0.1:3000/Gellery/Gallery.html"
+                                    target="_blank">Basic Creations</a></li>
+                            <li><a class="dropdown-item" href="http://127.0.0.1:3000/Gellery/Elaborate.html"
+                                    target="_blank">Elaborate Creations</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            More
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <li><a class="dropdown-item" href="http://127.0.0.1:3000/contact/contact.html"
+                                    target="_blank">Contact Us</a></li>
+                            <li><a class="dropdown-item" href="http://127.0.0.1:3000/feedback/feedback.html"
+                                    target="_blank">Feedback Form</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <form class="d-flex">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-light" type="submit">Search</button>
+            </form>
+        </div>
+    </nav>
+
+    <div id="welcome">
+    </div>
+
+    <div class="container gallery-wrapper">
+        <div class="gallery-section" id="elaborate">
+            <div class="section-icon">🐉</div>
+            <h2 class="text-center section-title">Elaborate Creations</h2>
+            <p class="section-intro text-center">
+                Here you will find the most detailed and complex origami creations!
+            </p>
+            <h3 class="category-title">Modular:</h3>
+            <div class="row">
+                <div class="col">
+                    <div class="card"
+                        onclick="openDetail('Octahedron', 'A minimalist, skeletal octahedron made from six identical square modules. Simple yet structurally elegant', 'Robert Neale', 'Mid-1960s', './complex/modular(octahedron).png','C202','$150','elaborate')">
+                        <img src="./complex/modular(octahedron).png" alt="Octahedron">
+                        <h3>Octahedron</h3>
+
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card"
+                        onclick="openDetail('Sonube Unit', 'A simple paper-folding design to make cubes and star shapes. You fold many of the same pieces and fit them together — no glue needed', 'Mitsunobu Sonobe (and Toshie Takahama)', '~1968', './complex/modular(sonube unit).png', 'C203','$95','elaborate')">
+                        <img src="./complex/modular(sonube unit).png" alt="Sonube Unit">
+                        <h3>Sonube Unit</h3>
+
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card"
+                        onclick="openDetail('Tamatebako Cube', 'A smart cube you can open from any side, but if you open more than one face it falls apart — like its name “tamatebako,” meaning “treasure box.”', 'Originally 1743 by Ōoka Shunboku; rediscovered in 1993 by Yasuo Koyanagi (published by Satoshi Tagaki), restored by Masao Okamura', '1743 (origin), 1993 (rediscovery)' , './complex/module(tamatebako cube).png', 'C204','$85','elaborate')">
+                        <img src="./complex/module(tamatebako cube).png" alt="Tamatebako Cube">
+                        <h3>Tamatebako Cube</h3>
+
+                    </div>
+                </div>
+            </div>
+            <h3 class="category-title">Mythical Creatures:</h3>
+            <div class="row">
+                <div class="col">
+                    <div class="card"
+                        onclick="openDetail('Griffin', 'A mythical beast combining the body of a lion with the head and wings of an eagle—often composed with reverse-color techniques for visual effect', 'Mario Adrados Netto', 'In Dragons, Witches, and Other Fantasy Creatures in Origami' , './complex/mythical creatures(griffin).png', 'C208','$95','elaborate')">
+                        <img src="./complex/mythical creatures(griffin).png" alt="Griffin">
+                        <h3>Griffin</h3>
+
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card"
+                        onclick="openDetail('Phoenix', 'A majestic bird associated with fire, rebirth, and immortality—often depicted with flowing tail feathers and dynamic posture', 'Satoshi Kamiya', 'Works of Satoshi Kamiya 2 (2012)', './complex/mythical creature(phoenix).png', 'C209','$100','elaborate')">
+                        <img src="./complex/mythical creature(phoenix).png" alt="Phoenix">
+                        <h3>Phoenix</h3>
+
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card"
+                        onclick="openDetail('Unicorn','A graceful horse-like figure with a spiraled horn on its head—elegant and symbolic of purity','Jo Nakashima', 'Designed ~2014; updated Nov 2019', './complex/mythical creatures(unicorn).png','C210','$79','elaborate')">
+                        <img src="./complex/mythical creatures(unicorn).png" alt="Unicorn">
+                        <h3>Unicorn</h3>
+
+                    </div>
+                </div>
+            </div>
+
+            <h3 class="category-title">Tessellation:</h3>
+            <div class="row">
+                <div class="col">
+                    <div class="card"
+                        onclick="openDetail('Hexagon Twist', 'Uses a hexagonal grid; the paper forms a honeycomb-like field of twisting hexagons. It’s one of the easiest ways to start tessellating on a hex grid', 'Shuzo Fujimoto / Eric Gjerde (teaching)', '1970s; book 2008', './complex/tessellation(hexagon).png', '5555','$150','elaborate')">
+                        <img src="./complex/tessellation(hexagon).png" alt="Hexagon Twist">
+                        <h3>Hexagon Twist</h3>
+
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card"
+                        onclick="openDetail('Hyrangea', 'A beautiful floral-looking pattern where repeated squarecollapses form four-petaled “hydrangea” flowers ', 'Shuzo Fujimoto', '1970s publications', './complex/tessellation(hyrangea).png', '4444','$154','elaborate')">
+                        <img src="./complex/tessellation(hyrangea).png" alt="Hyrangea">
+                        <h3>Hyrangea</h3>
+
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card"
+                        onclick="openDetail('Square Twist','One of the many tessellations. The paper is pre-creased into a square grid, then small square “twists” are repeated across the sheet to form a tiled, pinwheel-like pattern.','Shuzo Fujimoto', '1960s–70s publications', './complex/tessellation(square twist).png', '6666','$150','elaborate')">
+                        <img src="./complex/tessellation(square twist).png" alt="Square Twist">
+                        <h3>Square Twist</h3>
+
+                    </div>
+                </div>
+            </div>
+
+            <h3 class="category-title">Dinosaur:</h3>
+            <div class="row">
+                <div class="col">
+                    <div class="card"
+                        onclick="openDetail('T.Rex', 'A highly detailed, realistic paper model of a T-Rex skeleton — ribs, skull, tail, and legs all represented; regarded as one of the most impressive modular origami dinosaurs','Issei Yoshino', '1993 (original Japanese publication; later English version by Origami Maple)', './complex/dinosaur(t.rex).png', '7777','$250','elaborate')">
+                        <img src="./complex/dinosaur(t.rex).png" alt="T.Rex">
+                        <h3>T.Rex</h3>
+
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card"
+                        onclick="openDetail('Triceroptops', 'An extremely intricate three-horned dinosaur with a frill, limbs, and a tail folded from one uncut square. It’s much more detailed than beginner versions. ', 'Satoshi Kamiya', 'Works 1995–2003(2005)', './complex/dinosaur(triceroptops).png', '8888','$300','elaborate')">
+                        <img src="./complex/dinosaur(triceroptops).png" alt="Triceroptops">
+                        <h3>Triceroptops</h3>
+
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card"
+                        onclick="openDetail('Spinosauras','A highly detailed, three-dimensional origami Spinosaurus folded from a single square sheet,showcasing the dinosaur’s iconic sail, elongated crocodile-like snout, strong hind legs, and sweeping tail in realistic proportion','Satoshi Kamiya', 'Around 2010–2012, first shown at Origami Tanteidan Convention 17', './complex/dinosaurs(spinosauras).png', '9999','$205','elaborate')">
+                        <img src="./complex/dinosaurs(spinosauras).png" alt="spinosauras">
+                        <h3>Spinosauras</h3>
+
+                    </div>
+                </div>
+            </div>
+
+            <h3 class="category-title">Architecture:</h3>
+            <div class="row">
+                <div class="col">
+                    <div class="card"
+                        onclick="openDetail('Eiffel Tower', 'A stylized paper version of the Paris landmark with lattice-like folds for the tower legs. Usually folded from a single rectangular sheet','Fumiaki Shingu', 'Early 2000s online', './complex/architecture(eiffel tower).png', '1111','$190','elaborate')">
+                        <img src="./complex/architecture(eiffel tower).png" alt="Eiffel tower">
+                        <h3>Eiffel Tower</h3>
+
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card"
+                        onclick="openDetail('House', 'A simple or modular folded “house” with walls and a roof — a classic beginner architectural origami model that can be decorated to look like cabins, temples, or churches', 'Traditional / Kunihiko Kasahara', '1960s–70s books', './complex/architecture(house).png', '4545','$180','elaborate')">
+                        <img src="./complex/architecture(house).png" alt="House">
+                        <h3>House</h3>
+
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card"
+                        onclick="openDetail('Padoga','A multi-tiered tower based on East Asian temples. Layers of paper fold up to form the pagoda’s characteristic stacked roofs','Yoshihide Mamotani', '1970s magazines','./complex/architecture(padoga).png', '5454','$260','elaborate')">
+                        <img src="./complex/architecture(padoga).png" alt="padoga">
+                        <h3>Padoga</h3>
+
+                    </div>
+                </div>
+            </div>
+
+            <h3 class="category-title">Accessories:</h3>
+            <div class="row">
+                <div class="col">
+                    <div class="card"
+                        onclick="openDetail('Bow', 'A pretty paper bow you can stick on gifts, cards, or even use as a hair accessory. It’s one of the easiest origami accessories','Traditional /Fumiaki Shingu', '1950s–60s; online 2000s', './complex/accessories(bow).png', '6767','$70','elaborate')">
+                        <img src="./complex/accessories(bow).png" alt="bow">
+
+                        <h3>Bow</h3>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card"
+                        onclick="openDetail('Purse', 'A flat little purse or envelope you can use to hold notes or tiny gifts', 'Jack Skillman', '1965 book', './complex/accessories(purse).png', '9595','$95','elaborate')">
+                        <img src="./complex/accessories(purse).png" alt="Purse">
+                        <h3>Purse</h3>
+
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card"
+                        onclick="openDetail('Ring','A tiny paper ring, often with a folded “gem” on top. It can actually be worn on your finger','Traditional / Jo Nakashima', 'Decades old; Nakashima 2011', './complex/accessories(ring).png', '2500', '$105', 'elaborate')">
+                        <img src="./complex/accessories(ring).png" alt="Ring">
+                        <h3>Ring</h3>
+                    </div>
+                </div>
+
+            </div>
+
+            <h3 class="category-title">Advanced Flowers:</h3>
+            <div class="row">
+                <div class="col">
+                    <div class="card"
+                        onclick="openDetail('Camellia', 'An elegant folded camellia blossom with soft, overlapping petals — known for its clean geometry and natural look','Makoto Yamaguchi', 'late 1990s', './complex/complex flowers(camellia).png', '4580','$250','elaborate')">
+                        <img src="./complex/complex flowers(camellia).png" alt="camellia">
+                        <h3>Camellia</h3>
+
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card"
+                        onclick="openDetail('Cherry Blossom', 'Not the simple five-pointed “sakura,”  but an advanced layered cherry blossom with individual petals and even a calyx base', 'Naomiki Sato', '~2010–2013 tutorials', './complex/complex flowers(cherry blossom).png', '4590','$150','elaborate')">
+                        <img src="./complex/complex flowers(cherry blossom).png" alt="cherry blossom">
+                        <h3>Cherry Blossom</h3>
+
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card"
+                        onclick="openDetail('Kawasaki Rose','A very detailed rose with spiraling petals — the advanced version has extra layers and a more realistic bloom than the simple Kawasaki rose','Toshikazu Kawasaki', '1980s; Origami for the Connoisseur 1987', './complex/complex flowers(kawasaki rose).png', '4550','$250','elaborate')">
+                        <img src="./complex/complex flowers(kawasaki rose).png" alt="kawasaki rose">
+                        <h3>Kawasaki Rose</h3>
+
+                    </div>
+                </div>
+            </div>
+
+            <h3 class="category-title">Mask /Face:</h3>
+            <div class="row">
+                <div class="col">
+                    <div class="card"
+                        onclick="openDetail('Kitsune Mask', 'A stylized fox mask used in Nō / Kyōgen theater and Japanese festivals, representing fox spirits (kitsune) that can shift between benevolent and trickster roles','Traditional', '14th century', './complex/faces(kitsune mask).png', '9890','$190','elaborate')">
+                        <img src="./complex/faces(kitsune mask).png" alt="kitsune mask">
+                        <h3>Kitsune Mask</h3>
+
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card"
+                        onclick="openDetail('Oni Mask', 'A much more detailed demon/ogre mask than the simple versions — includes horns, teeth, eye sockets, and stylized hair folds', 'Fumiaki Kawahata', '2000s–2010s conventions','./complex/faces(oni mask).png', '9292','$400','elaborate')">
+                        <img src="./complex/faces(oni mask).png" alt="oni mask">
+                        <h3>Oni Mask</h3>
+
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card"
+                        onclick="openDetail('Samurai Mask','An intricate mask resembling a Japanese samurai warrior’s menpo (armor face mask). Features horns, layered plates, and fierce expression— all from one sheet of paper','Kade Chan', '~2011 online/convention', './complex/faces(samurai mask).png', '1515','$350','elaborate')">
+                        <img src="./complex/faces(samurai mask).png" alt="samurai mask">
+                        <h3>Samurai Mask</h3>
+
+                    </div>
+                </div>
+            </div>
+
+            <h3 class="category-title">Wet-Folded Sculpture:</h3>
+            <div class="row">
+                <div class="col">
+                    <div class="card"
+                        onclick="openDetail('Bull', 'A powerful, rounded bull with curved horns and a lifelike stance — one of the first models to show how wet-folding can give paper sculpture a 3-D form','Akira Yoshizawa', '1950s exhibitions; Origami Art 1963', './complex/wet folded sculpture(bull).png', 'B670','$450','elaborate')">
+                        <img src="./complex/wet folded sculpture(bull).png" alt="bull">
+                        <h3>Bull</h3>
+
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card"
+                        onclick="openDetail('Elephant', 'Montroll’s elephant model is simple in crease pattern but, when wet-folded, develops smooth curves, rounded ears, and a natural stance', 'John Montroll', 'Origami Sculptures 1992', './complex/wet-folded sculpture(elephant).png', 'B680','$180','elaborate')">
+                        <img src="./complex/wet-folded sculpture(elephant).png" alt="elephant">
+                        <h3>Elephant</h3>
+
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card"
+                        onclick="openDetail('Horse','Graceful horse with flowing curves and volume, showing off wet-folding’s ability to model muscles and posture','Akira Yoshizawa', '1950s exhibitions; Origami Museum I 1971', './complex/wet-folded sculpture(horse).png','B580','$300','elaborate')">
+                        <img src="./complex/wet-folded sculpture(horse).png" alt="Horse">
+                        <h3>Horse</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="footer mt-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 footer-section">
+                    <h5>About Origami</h5>
+                    <p>Discover the art of paper folding with our tutorials, patterns, and creative ideas. Join our
+                        community of origami enthusiasts!</p>
+                </div>
+                <div class="col-md-4 footer-section">
+                    <h5>Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="http://127.0.0.1:3000/Index.html">Home</a></li>
+                        <li><a href="http://127.0.0.1:3000/About%20Page/about%20us.html" target="_blank">About Us</a>
+                        </li>
+                        <li><a href="http://127.0.0.1:3000/Triks%20Page/tricks.html target=" _blank">Tricks</a></li>
+                        <li><a href="http://127.0.0.1:3000/Gellery/Gallery.html" target="_blank">Gallery</a></li>
+                        <li><a href="http://127.0.0.1:3000/contact/contact.html" target="_blank">Contact</a></li>
+                        <li><a href="http://127.0.0.1:3000/feedback/feedback.html" target="_blank">Feedback</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4 footer-section">
+                    <h5>Connect With Us</h5>
+                    <div class="social-icons">
+                        <a href="https://www.WhatsApp.com" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://www.instagram.com/orig.amimarketing/?utm_source=qr&igsh=MTk5YjU5N2Q0bW1tYw%3D%3D#"
+                            aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                        <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                        <a href="#" aria-label="Google"><i class="fab fa-google"></i></a>
+                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                    <p class="mt-3">Subscribe to our newsletter</p>
+                    <div class="input-group newsletter">
+                        <input type="email" class="form-control" placeholder="Your email">
+                        <button class=" btn-subscribe" type="button">Subscribe</button>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom text-center py-3">
+                <p>&copy; 2025 Origami Website. All rights reserved.</p>
+            </div>
+        </div>
+        </div>
+    </footer>
+
+    </div>
+    </div>
+    </div>
+    </footer>
+</body>
+
+</html>
